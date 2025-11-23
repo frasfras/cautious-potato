@@ -20,7 +20,17 @@
      - Value: Your API key (e.g., `syn_xxxxx` or `sk-xxxxx`)
      - Description: Pre-configure the API key (users won't need to enter it)
 
-4. **Deploy**: Click "Deploy site"
+4. **IMPORTANT**: After adding environment variables, you MUST trigger a new build:
+   - Go to Deploys tab
+   - Click "Trigger deploy" → "Deploy site"
+   - Environment variables are only embedded at build time, not runtime!
+
+5. **Verify**: After deployment, open browser console (F12) and look for:
+   ```
+   🔍 Environment variables check:
+     REACT_APP_API_KEY exists: true
+     REACT_APP_API_KEY length: XX
+   ```
 
 ### Option 2: Using Netlify CLI
 

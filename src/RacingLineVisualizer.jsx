@@ -64,8 +64,17 @@ function loadApiConfig() {
     const envApiKey = process.env.REACT_APP_API_KEY || '';
     const envProvider = process.env.REACT_APP_DEFAULT_API_PROVIDER || '';
     
+    // Debug logging
+    console.log('🔍 Environment variables check:');
+    console.log('  REACT_APP_API_KEY exists:', !!envApiKey);
+    console.log('  REACT_APP_API_KEY length:', envApiKey.length);
+    console.log('  REACT_APP_DEFAULT_API_PROVIDER:', envProvider || 'not set');
+    
     const apiKey = localStorage.getItem('racing-coach-api-key') || envApiKey;
     const apiProvider = localStorage.getItem('racing-coach-provider') || envProvider || 'openai';
+    
+    console.log('  Final API key length:', apiKey.length);
+    console.log('  Final provider:', apiProvider);
     
     return { apiKey, apiProvider };
   } catch (error) {

@@ -1,17 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import fog from './fog.css';
+// import fog from './fog.css';
 // import GpsTrackViewer from "./GpsTrackViewer";
 import RacingLineVisualizer from "./RacingLineVisualizer";
 import EtherealFog from './EtherealFog';
 
 
 function App() {
-  const backgroundStyle = {
-    backgroundImage: `url('/ghostmobile.jpeg')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    minHeight: '100vh'
+  // const backgroundStyle = {
+  //   backgroundImage: `url('/ghostmobile.jpeg')`,
+  //   backgroundSize: 'cover',
+  //   backgroundPosition: 'center',
+  //   minHeight: '100vh'
   };
 
   return (
