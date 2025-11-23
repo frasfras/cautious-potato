@@ -51,6 +51,7 @@ body {
   inset: 0;
   overflow: hidden;
   z-index: 2; /* Adjust as needed */
+  pointer-events: none; /* Allow clicks to pass through */
 }
 
 .fog-layer {

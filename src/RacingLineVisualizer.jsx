@@ -328,7 +328,9 @@ export default function RacingLineVisualizer() {
 
   // 📁 File input handler
   const handleFileChange = async (event) => {
+    console.log('📁 File input clicked, event:', event);
     const file = event.target.files[0];
+    console.log('📁 Selected file:', file);
     if (!file) return;
 
     setLoadingFile(true);
@@ -337,7 +339,9 @@ export default function RacingLineVisualizer() {
 
     try {
       const text = await file.text();
+      console.log('📁 File text length:', text.length);
       const gpsPoints = await parseCSVData(text);
+      console.log('📁 Parsed GPS points:', gpsPoints.length);
       
       if (gpsPoints.length === 0) {
         throw new Error("No valid GPS data found in file");
