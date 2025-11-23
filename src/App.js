@@ -12,7 +12,7 @@ function App() {
   //   backgroundSize: 'cover',
   //   backgroundPosition: 'center',
   //   minHeight: '100vh'
-  };
+  // };
 
   return (
     <div  className="App">
