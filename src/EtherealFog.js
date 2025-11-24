@@ -5,7 +5,7 @@ export default function EtherealFog() {
     <div className="ethereal-fog pointer-events-none">
       <div className="fog-layer layer1"></div>
       <div className="fog-layer layer2"></div>
-      <div className="fog-layer layer3"></div>
+      {/* <div className="fog-layer layer3"></div> */}
     </div>
   );
 }
